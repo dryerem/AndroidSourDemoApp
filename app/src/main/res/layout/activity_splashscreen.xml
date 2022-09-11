@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEDCE0"
+    tools:context=".Splashscreen">
+
+    <View
+        android:id="@+id/activity_splashscreen_rectangle"
+        android:layout_width="230dp"
+        android:layout_height="237.22dp"
+        android:background="@drawable/splashscreen_icon_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/activity_splashscreen_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bottle_icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/activity_splashscreen_mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sour"
+        android:fontFamily="@font/abezee_regular"
+        android:textStyle="normal"
+        android:textFontWeight="400"
+        android:textSize="30sp"
+        android:lineHeight="30dp"
+        android:textColor="#3D0007"
+        android:layout_marginTop="15.78dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_splashscreen_rectangle"
+        />
+
+    <TextView
+        android:id="@+id/activity_splashscreen_secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best drink receipes"
+        android:fontFamily="@font/abezee_regular"
+        android:textStyle="italic"
+        android:textFontWeight="400"
+        android:textSize="24sp"
+        android:lineHeight="28dp"
+        android:textColor="#3D0007"
+        android:layout_marginTop="15.78dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_splashscreen_mainText"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
