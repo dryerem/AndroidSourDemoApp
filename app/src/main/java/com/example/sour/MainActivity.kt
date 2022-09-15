@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun onSignUpButtonClick(view: View) {
+        val signUpIntent = Intent(this, CreateNewUser::class.java)
+        startActivity(signUpIntent)
+    }
+
     public fun pushLoginPage(view: View) {
         val loginIntent = Intent(this, LoginActivity::class.java)
         startActivity(loginIntent)
